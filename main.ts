@@ -35,8 +35,7 @@ input.onButtonPressed(Button.AB, function () {
         ZahlB = 0
         Rechenart = 0
     }
-    serial.writeLine("Ergebnis = ")
-    serial.writeNumber(ZahlSumme)
+    serial.writeValue("Ergebnis", ZahlSumme)
     for (let index = 0; index < 3; index++) {
         basic.showNumber(ZahlSumme)
     }
@@ -70,8 +69,8 @@ let ZahlSumme = 0
 let ZahlB = 0
 let ZahlA = 0
 let Rechenart = 0
-basic.showString("T-Rechner V1.1")
-serial.writeLine("Starte Taschenrechner V1.1")
+basic.showString("T-Rechner V1.2")
+serial.writeLine("Starte Taschenrechner V1.2")
 basic.forever(function () {
 	
 })
